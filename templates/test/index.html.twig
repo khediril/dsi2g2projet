@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}index
+{% endblock %}
+{% block body %}
+<h1>Liste des étudiants</h1>
+<ul>
+{% for x in tab %}
+
+<li>{{   x| capitalize }}</li>
+    
+{% endfor %}
+</ul>
+
+{% endblock %}
